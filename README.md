@@ -1,30 +1,30 @@
 # Exploratory Data Analysis on US Home Prices
-This repository contains code for performing exploratory data analysis (EDA) on factors influencing home prices across the US. The primary purpose of this analysis is to understand the relationships between various economic indicators and home prices. The dataset used for this analysis can be found on Kaggle: Factors Influence the Home Prices Across US.
+# Overview
+This project performs exploratory data analysis (EDA) on factors influencing home prices across the US. Using Python and various data analysis and visualization libraries, the project aims to uncover relationships between economic indicators and home prices. 
 
-# Data Sources
-demand_data.csv
-supply_data.csv
-# Tools Used
-Pandas: For data manipulation and analysis.
-Matplotlib: For data visualization.
-Seaborn: For advanced data visualization.
-# Code Overview
-# Data Preparation
-1. Reading Data:
-```
-dem_df = pd.read_csv('demand_data.csv')
-sup_df = pd.read_csv('supply_data.csv')
-```
-2. Converting to Datetime:
-```
-dem_df['DATE'] = pd.to_datetime(dem_df['DATE'])
-sup_df['Period'] = pd.to_datetime(sup_df['Period'], format='%d-%m-%Y').dt.strftime('%Y-%m-%d')
-sup_df.rename(columns={'Period': 'DATE'}, inplace=True)
-sup_df['DATE'] = pd.to_datetime(sup_df['DATE'])
-```
-3. Merging Data:
-```
-df = pd.merge(dem_df, sup_df)
-df.to_csv('supp_dem.csv', index=False)
-```
-4. Extracting Date Components:
+# Motivation
+The motivation behind this project stems from a need to understand how different economic variables affect home prices. It  serves as a valuable learning experience for handling and analyzing real-world data.
+
+# Purpose
+The primary goal of this project is to:
+Analyze the impact of economic factors on home prices.
+Visualize the data to identify trends and correlations.
+Provide a reusable framework for similar EDA projects.
+
+# Problem Solved
+This project addresses the challenge of understanding the complex relationships between various economic indicators and home prices. By automating data processing and visualization, it saves time and ensures accurate, reproducible results.
+
+# Learning Outcomes
+During the development of this project, valuable experience was gained in:
+Data manipulation using Pandas.
+Visualization techniques with Matplotlib and Seaborn.
+Handling and merging large datasets.
+Extracting meaningful insights from data.
+
+# Unique Features
+What makes this project stand out is its practical approach to a real-world problem. It provides a clear, visual representation of data that can be easily interpreted, making it a useful tool for decision-makers in the housing market.
+
+# Future Enhancements
+Improve data preprocessing steps for better accuracy.
+Add more economic indicators to the analysis.
+Implement machine learning models to predict home prices.

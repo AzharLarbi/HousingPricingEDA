@@ -7,8 +7,11 @@ The motivation behind this project stems from a need to understand how different
 
 # Purpose
 The primary goal of this project is to:
+
 Analyze the impact of economic factors on home prices.
+
 Visualize the data to identify trends and correlations.
+
 Provide a reusable framework for similar EDA projects.
 
 # Problem Solved
@@ -16,9 +19,13 @@ This project addresses the challenge of understanding the complex relationships 
 
 # Learning Outcomes
 During the development of this project, valuable experience was gained in:
+
 Data manipulation using Pandas.
+
 Visualization techniques with Matplotlib and Seaborn.
+
 Handling and merging large datasets.
+
 Extracting meaningful insights from data.
 
 # Unique Features
@@ -26,5 +33,7 @@ What makes this project stand out is its practical approach to a real-world prob
 
 # Future Enhancements
 Improve data preprocessing steps for better accuracy.
+
 Add more economic indicators to the analysis.
+
 Implement machine learning models to predict home prices.
